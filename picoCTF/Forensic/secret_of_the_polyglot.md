@@ -2,9 +2,8 @@
 
 Download the provided file and apparently its a .pdf and inside you'll find a part of the flag
 
-```
-1n_pn9_&_pdf_7f9bccd1}
-```
+
+**1n_pn9_&_pdf_7f9bccd1}**
 
 I checked the file type and turns out its not a .pdf but a .png
 
