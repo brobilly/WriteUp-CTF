@@ -10,6 +10,7 @@ I scanned my network using netdiscover to find the IP of the machine.
 #netdiscover - r 192.168.100.0/
 ```
 ![1](images/1.png)
+
 Looking at that list, i found that the ip is 192.168.100.
 
 After finding the IP, i ran nmap to gather some infos regarding the ports and
@@ -55,6 +56,7 @@ page is running wordpress
 
 ## Bruteforcing
 ![7](images/7.png)
+
 I went to the admin login page, and after failing some random common defaults
 user-password trials, I decided to bruteforce it using hydra and using the
 wordlist I found from robots.txt
@@ -100,6 +102,7 @@ netcat
 #nc -lnvp 4444
 ```
 ![13](images/13.png)
+
 And we got a shell.
 
 Here im gonna upgrade the shell using python so we can get the more
@@ -114,6 +117,7 @@ python3 -c 'import pty;pty.spawn("/bin/bash")'
 
 After looking around I found a user named robot and inside I found the second
 flag which apparently only accessible to robot and a password hashed with md5.
+
 ![15](images/15.png)
 
 I went to a hash cracker online and cracked the password
@@ -143,6 +147,7 @@ SUID bit are set.
 ```
 ![19](images/19.png)
 ![20](images/20.png)
+
 Flag 3 retrieved, machine pwned!
 
 
